@@ -7,14 +7,14 @@ public class Movie {
   private int release;
 
 
-  private double responce;
+  private double response;
   private String genre;
   private List<Cast> cast;
 
   public Movie(String title, int release,double response, String genre, List<Cast> cast){
     this.title = title;
     this.release = release;
-    this.responce = response;
+    this.response = response;
     this.genre = genre;
     this.cast = cast;
   }
@@ -27,6 +27,9 @@ public class Movie {
 
   public int getRelease() {
     return release;
+  }
+  public double getResponse() {
+    return response;
   }
 
   public String getGenre() {
@@ -41,7 +44,7 @@ public class Movie {
   public String toString(){
     return  "\n\nНазва фільму: " + title +
             "\nРік випуску: " + release +
-            "\nВідгук: " + responce +
+            "\nВідгук: " + response +
             "\nЖанр: " + genre +
             "\nВ головних ролях: " + cast;
   }

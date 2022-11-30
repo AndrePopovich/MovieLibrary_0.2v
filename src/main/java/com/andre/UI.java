@@ -83,6 +83,8 @@ public class UI {
         "\n5. Вихід з акаунту" +
         "\n6. Вихід з програми");
     Scanner s = new Scanner(System.in);
+    JsonSimpleParser jsonSimpleParser = new JsonSimpleParser();
+    System.out.print("Оберіть варіант з меню: ");
     num = s.nextLine();
     switch (num){
       case "1":
@@ -90,10 +92,80 @@ public class UI {
         mainMenu();
         break;
       case "2":
+        System.out.println("\n1. Жахи" + "\n2. Комедії" +
+            "\n3. Драми" + "\n4. Документальні");
+        System.out.print("Оберіть жанр: ");
+        num = s.nextLine();
+        switch (num){
+          case "1":
+            System.out.println(jsonSimpleParser.parseTop("Horror","2").toString().replaceAll("]", "").replaceAll("\\[", ""));
+            break;
+          case "2":
+            System.out.println(jsonSimpleParser.parseTop("Comedy","2").toString().replaceAll("]", "").replaceAll("\\[", ""));
+            break;
+          case "3":
+            System.out.println(jsonSimpleParser.parseTop("Drama","2").toString().replaceAll("]", "").replaceAll("\\[", ""));
+            break;
+          case "4":
+            System.out.println(jsonSimpleParser.parseTop("Documentary","2").toString().replaceAll("]", "").replaceAll("\\[", ""));
+            break;
+          default:
+            System.out.println("Невірні дані!!!");
+            break;
+        }
+        mainMenu();
+
         break;
       case "3":
+        System.out.println("\n1. Сортувати по зростанню" + "\n2. Сортувати по спаданню");
+        System.out.print("Оберіть вид сортування: ");
+        num = s.nextLine();
+        switch (num){
+          case "1":
+            System.out.println(jsonSimpleParser.parseTop("","3").toString().replaceAll("]", "").replaceAll("\\[", ""));
+            break;
+          case "2":
+            System.out.println(jsonSimpleParser.parseTop("","4").toString().replaceAll("]", "").replaceAll("\\[", ""));
+            break;
+          default:
+            System.out.println("Невірні дані!!!");
+            break;
+        }
+        mainMenu();
         break;
       case "4":
+        System.out.println("\n1. Жахи" + "\n2. Комедії" +
+            "\n3. Драми" + "\n4. Документальні" + "\n5. Історичні"+ "\n6. Сімейні"+
+            "\n7. Трілери");
+        System.out.print("Оберіть жанр: ");
+        num = s.nextLine();
+        switch (num){
+          case "1":
+            System.out.println(jsonSimpleParser.parseTop("Horror","5").toString().replaceAll("]", "").replaceAll("\\[", ""));
+            break;
+          case "2":
+            System.out.println(jsonSimpleParser.parseTop("Comedy","5").toString().replaceAll("]", "").replaceAll("\\[", ""));
+            break;
+          case "3":
+            System.out.println(jsonSimpleParser.parseTop("Drama","5").toString().replaceAll("]", "").replaceAll("\\[", ""));
+            break;
+          case "4":
+            System.out.println(jsonSimpleParser.parseTop("Documentary","5").toString().replaceAll("]", "").replaceAll("\\[", ""));
+            break;
+          case "5":
+            System.out.println(jsonSimpleParser.parseTop("Historical","5").toString().replaceAll("]", "").replaceAll("\\[", ""));
+            break;
+          case "6":
+            System.out.println(jsonSimpleParser.parseTop("Family","5").toString().replaceAll("]", "").replaceAll("\\[", ""));
+            break;
+          case "7":
+            System.out.println(jsonSimpleParser.parseTop("Thriller","5").toString().replaceAll("]", "").replaceAll("\\[", ""));
+            break;
+          default:
+            System.out.println("Невірні дані!!!");
+            break;
+        }
+        mainMenu();
         break;
       case "5":
         startMenu();
@@ -117,6 +189,7 @@ public class UI {
       System.out.println((i + 1) + ". Фільми " + year + " року");
     }
     JsonSimpleParser jsonSimpleParser = new JsonSimpleParser();
+    System.out.print("Оберіть номер в списку: ");
     int select = s.nextInt();
     if (select > 0 && select < 19) {
       year = 1999;
