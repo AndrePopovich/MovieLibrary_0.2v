@@ -3,22 +3,22 @@ package com.andre.model;
 import java.util.List;
 
 public class Root {
-  private String year;
+  private int year;
   private List<Movie> movies;
   @Override
   public String toString(){
-    return "Рік виходу: " + year+ "\nФільми: " + movies;
+    return "Рік випуску: " + year+ "\nФільми: " + movies;
   }
 
-  public String getYear() {
+  public int getYear() {
     return year;
   }
-  public String getMovies() {
-    return movies.toString();
+  public List<Movie> getMovies() {
+    return movies;
   }
 
 
-  public void setYear(String year) {
+  public void setYear(int year) {
     this.year = year;
   }
 

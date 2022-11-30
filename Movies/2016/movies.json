@@ -1,0 +1,160 @@
+{
+  "year": 2016,
+  "movies":[
+    {
+      "title":"The Forest",
+      "year":2016,
+      "response":4.6,
+      "cast":[
+        {
+          "fullName":"Natalie Dormer"
+        },
+        {
+          "fullName":"Taylor Kitsch"
+        }
+      ],
+      "genres":"Thriller"
+    },
+    {
+      "title":"Anesthesia",
+      "year":2016,
+      "response":8.6,
+      "cast":[
+        {
+          "fullName":"Sam Waterston"
+        },
+        {
+          "fullName":"Tim Blake Nelson"
+        },
+        {
+          "fullName":"Kristen Stewart"
+        }
+      ],
+      "genres":"Drama"
+    },
+    {
+      "title":"Lamb",
+      "year":2016,
+      "response":8.9,
+      "cast":[
+        {
+          "fullName":"Ross Partridge"
+        },
+        {
+          "fullName":"Oona Laurence"
+        },
+        {
+          "fullName":"Jess Weixler"
+        }
+      ],
+      "genres":"Drama"
+    },
+    {
+      "title":"Ride Along 2",
+      "year":2016,
+      "response":9.9,
+      "cast":[
+        {
+          "fullName":"Ice Cube"
+        },
+        {
+          "fullName":"Kevin Hart"
+        }
+      ],
+      "genres":"Action"
+    },
+    {
+      "title":"13 Hours: The Secret Soldiers of Benghazi",
+      "year":2016,
+      "response":4.5,
+      "cast":[
+        {
+          "fullName":"James Badge Dale"
+        },
+        {
+          "fullName":"John Krasinski"
+        },
+        {
+          "fullName":"Max Martini"
+        }
+      ],
+      "genres":"Action"
+    },
+    {
+      "title":"Norm of the North",
+      "year":2016,
+      "response":5.6,
+      "cast":[
+        {
+          "fullName":"Rob Schneider"
+        },
+        {
+          "fullName":"Heather Graham"
+        },
+        {
+          "fullName":"Ken Jeong"
+        }
+      ],
+      "genres":"Animated"
+    },
+    {
+      "title":"The Benefactor",
+      "year":2016,
+      "response":7.5,
+      "cast":[
+        {
+          "fullName":"Richard Gere"
+        },
+        {
+          "fullName":"Dakota Fanning"
+        },
+        {
+          "fullName":"Theo James"
+        }
+      ],
+      "genres":"Drama"
+    },
+    {
+      "title":"Dirty Grandpa",
+      "year":2016,
+      "response":3.6,
+      "cast":[
+        {
+          "fullName":"Zac Efron"
+        },
+        {
+          "fullName":"Robert De Niro"
+        }
+      ],
+      "genres":"Comedy"
+    },
+    {
+      "title":"The 5th Wave",
+      "year":2016,
+      "response":7.0,
+      "cast":[
+        {
+          "fullName":"Chloë Grace Moretz"
+        },
+        {
+          "fullName":"Liev Schreiber"
+        }
+      ],
+      "genres":"Science Fiction"
+    },
+    {
+      "title":"The Boy",
+      "year":2016,
+      "response":9.6,
+      "cast":[
+        {
+          "fullName":"Lauren Cohan"
+        },
+        {
+          "fullName":"Rupert Evans"
+        }
+      ],
+      "genres":"Horror"
+    }
+  ]
+}

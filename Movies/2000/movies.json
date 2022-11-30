@@ -1,0 +1,196 @@
+{
+  "year": 2000,
+  "movies": [
+    {
+      "title":"The Contender",
+      "year":2000,
+      "response": 6.4,
+      "genres":"Drama",
+      "cast":[
+        {
+          "fullName":"Joan Allen"
+        },
+        {
+          "fullName":"Jeff Bridges"
+        },
+        {
+          "fullName":"Gary Oldman"
+        },
+        {
+          "fullName":"Christian Slater"
+        },
+        {
+          "fullName":"Sam Elliott"
+        },
+        {
+          "fullName":"Kathryn Morris"
+        }
+      ]
+    },
+    {
+      "title":"Coyote Ugly",
+      "year":2000,
+      "response": 6.3,
+      "genres":"Comedy",
+      "cast":
+      [
+        {
+          "fullName":"Piper Perabo"
+        },
+        {
+          "fullName":"Adam Garcia"
+        },
+        {
+          "fullName":"Tyra Banks"
+        }
+       ]
+    },
+    {
+      "title":"The Crew",
+      "year":2000,
+      "response": 3.2,
+      "genres":"Comedy",
+      "cast":
+      [
+        {
+          "fullName":"Richard Dreyfuss"
+        },
+        {
+          "fullName":"Burt Reynolds"
+        },
+        {
+          "fullName":"Dan Hedaya"
+        }
+      ]
+    },
+    {
+      "title":"The Crossing",
+      "year":2000,
+      "response": 8.8,
+      "genres":"Historical",
+      "cast":
+      [
+        {
+          "fullName":"Jeff Daniels"
+        },
+        {
+          "fullName":"Roger Rees"
+        },
+        {
+          "fullName":"Sebastian Roché"
+        },
+        {
+          "fullName":"Steven McCarthy"
+        }
+      ]
+
+    },
+    {
+      "title":"Digimon",
+      "year":2000,
+      "response": 3.7,
+      "genres":"Adventure",
+      "cast":
+      [
+        {
+          "fullName":"Lara Jill Miller"
+        },
+        {
+          "fullName":"Joshua Seth"
+        },
+        {
+          "fullName":"Bob Glouberman"
+        }
+      ]
+    },
+    {
+      "title":"Dinosaur",
+      "year":2000,
+      "response": 1.2,
+      "genres":"Animated",
+      "cast":
+      [
+        {
+          "fullName":"D.B. Sweeney"
+        },
+        {
+          "fullName":"Alfre Woodard"
+        },
+        {
+          "fullName":"Ossie Davis"
+        }
+      ]
+    },
+    {
+      "title":"Down to You",
+      "year":2000,
+      "response": 9.9,
+      "genres":"Comedy",
+      "cast":
+      [
+        {
+          "fullName": "Freddie Prinze"
+        },
+        {
+          "fullName":"Julia Stiles"
+        }
+      ]
+    },
+    {
+      "title":"Dr. T & the Women",
+      "year":2000,
+      "response": 3.4,
+      "genres":"Romance",
+      "cast":
+      [
+        {
+          "fullName":"Alfre Woodard"
+        },
+        {
+          "fullName":"Ossie Davis"
+        },
+        {
+          "fullName":"Alfre Woodard"
+        },
+        {
+          "fullName":"Ossie Davis"
+        }]
+        },
+    {
+      "title":"Dracula 2000",
+      "year":2000,
+      "response": 6.6,
+      "genres":"Horror",
+      "cast":
+      [
+        {
+          "fullName":"Gerard Butler"
+        },
+        {
+          "fullName":"Christopher Plummer"
+        }
+      ]
+    },
+    {
+      "title":"Drowning Mona",
+      "year":2000,
+      "response": 8.8,
+      "genres":"Comedy",
+      "cast":
+      [
+        {
+          "fullName":"Bette Midler"
+        },
+        {
+          "fullName":"Jamie Lee Curtis"
+        },
+        {
+          "fullName":"Danny DeVito"
+        },
+        {
+          "fullName":"Neve Campbell"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "year": 2013,
+  "movies":[
+    {
+      "title":"2 Guns",
+      "year":2013,
+      "response":7.4,
+      "cast":[
+        {
+          "fullName":"Denzel Washington"
+        },
+        {
+          "fullName":"Mark Wahlberg"
+        },
+        {
+          "fullName":"Paula Patton"
+        }
+      ],
+      "genres":"Action"
+    },
+    {
+      "title":"12 Rounds 2: Reloaded",
+      "year":2013,
+      "response":8.9,
+      "cast":[
+        {
+          "fullName":"Randy Orton"
+        },
+        {
+          "fullName":"Brian Markinson"
+        },
+        {
+          "fullName":"Venus Terzo"
+        }
+      ],
+      "genres":"Action"
+    },
+    {
+      "title":"12 Years a Slave",
+      "year":2013,
+      "response":9.4,
+      "cast":[
+        {
+          "fullName":"Chiwetel Ejiofor"
+        },
+        {
+          "fullName":"Michael Fassbender"
+        },
+        {
+          "fullName":"Benedict Cumberbatch"
+        }
+      ],
+      "genres":"Drama"
+    },
+    {
+      "title":"20 Feet from Stardom",
+      "year":2013,
+      "response":8.3,
+      "cast":[
+        {
+          "fullName":"A look at the lives of background singers."
+        }
+      ],
+      "genres":"Documentary"
+    },
+    {
+      "title":"21 and Over",
+      "year":2013,
+      "response":7.7,
+      "cast":[
+        {
+          "fullName":"Miles Teller"
+        },
+        {
+          "fullName":"Skylar Astin"
+        },
+        {
+          "fullName":"Justin Chon"
+        },
+        {
+          "fullName":"Sarah Wright"
+        }
+      ],
+      "genres":"Comedy"
+    },
+    {
+      "title":"3 Geezers!",
+      "year":2013,
+      "response":9.6,
+      "cast":[
+        {
+          "fullName":"J.K. Simmons"
+        },
+        {
+          "fullName":"Basil Hoffman"
+        },
+        {
+          "fullName":"Tim Allen"
+        }
+      ],
+      "genres":"Comedy"
+    },
+    {
+      "title":"30 Nights of Paranormal Activity with the Devil Inside the Girl with the Dragon Tattoo",
+      "year":2013,
+      "response":2.2,
+      "cast":[
+        {
+          "fullName":"Kathryn Fiore"
+        },
+        {
+          "fullName":"Ben Morrison"
+        },
+        {
+          "fullName":"French Stewart"
+        }
+      ],
+      "genres":"Comedy"
+    }
+  ]
+}

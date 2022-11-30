@@ -1,46 +1,48 @@
 package com.andre.model;
 
-import com.google.gson.JsonObject;
+import java.util.List;
 
 public class Movie {
-  private final String TITLE;
-  private final int RELEASE;
-  private final double RESPONSE;
-  private final String GENRE;
-  private final String[] CAST;
+  private String title;
+  private int release;
 
-  public Movie(String title, int release,double response, String genre, String[] cast){
-    this.TITLE = title;
-    this.RELEASE = release;
-    this.RESPONSE = response;
-    this.GENRE = genre;
-    this.CAST = cast;
+
+  private double responce;
+  private String genre;
+  private List<Cast> cast;
+
+  public Movie(String title, int release,double response, String genre, List<Cast> cast){
+    this.title = title;
+    this.release = release;
+    this.responce = response;
+    this.genre = genre;
+    this.cast = cast;
   }
 
 
 
   public String getTitle() {
-    return TITLE;
+    return title;
   }
 
   public int getRelease() {
-    return RELEASE;
+    return release;
   }
 
   public String getGenre() {
-    return GENRE;
+    return genre;
   }
 
-  public String[] getCast() {
-    return CAST;
+  public List<Cast> getCast() {
+    return cast;
   }
 
   @Override
   public String toString(){
-    return "Назва фільму: " + TITLE +
-            "\nРік виходу: " + RELEASE +
-            "\nВідгук" + RESPONSE +
-            "\nЖанр: " + GENRE +
-            "\nВ головних ролях: " + CAST;
+    return  "\n\nНазва фільму: " + title +
+            "\nРік випуску: " + release +
+            "\nВідгук: " + responce +
+            "\nЖанр: " + genre +
+            "\nВ головних ролях: " + cast;
   }
 }

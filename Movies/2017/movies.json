@@ -1,0 +1,79 @@
+{
+  "year": 2017,
+  "movies":[
+    {
+      "title":"Arsenal",
+      "year":2017,
+      "response":7.9,
+      "cast":[
+        {
+          "fullName":"Adrian Grenier"
+        },
+        {
+          "fullName":"Johnathon Schaech"
+        },
+        {
+          "fullName":"Nicolas Cage"
+        }
+      ],
+      "genres":"Action"
+    },
+    {
+      "title":"Between Us",
+      "year":2017,
+      "response":5.5,
+      "cast":[
+        {
+          "fullName":"Olivia Thirlby"
+        },
+        {
+          "fullName":"Ben Feldman"
+        },
+        {
+          "fullName":"Adam Goldberg"
+        },
+        {
+          "fullName":"Analeigh Tipton"
+        }
+      ],
+      "genres":"Comedy"
+    },
+    {
+      "title":"Monster Trucks",
+      "year":2017,
+      "response":8.8,
+      "cast":[
+        {
+          "fullName":"Lucas Till"
+        },
+        {
+          "fullName":"Jane Levy"
+        },
+        {
+          "fullName":"Amy Ryan"
+        },
+        {
+          "fullName":"Holt McCallany"
+        }
+      ],
+      "genres":"Animated"
+    },
+    {
+      "title":"The Bye Bye Man",
+      "year":2017,
+      "response":9.6,
+      "cast":[
+        {
+          "fullName":"Douglas Smith"
+        },
+        {
+          "fullName":"Doug Jones"
+        },
+        {
+          "fullName":"Michael Trucco"
+        }
+      ],
+      "genres":"Horror"
+    }
+  ]
+}
