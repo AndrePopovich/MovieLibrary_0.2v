@@ -44,16 +44,27 @@ public class UI {
           }
           System.out.print(ANSI_BLUE+"Введіть логін: ");
           login = s.nextLine();
-          readPassword = cnsl.readPassword(ANSI_YELLOW+"Введіть пароль: ");
-          User user = new User(login, new String(readPassword));
-          check = user.Authorization();
-          if (check) {
-            System.out.println(ANSI_GREEN+"Ви успішно ввійшли в акаунт!!!");
-            mainMenu();
+          if (login.length() >= 4 && login.length() <= 20){
+            readPassword = cnsl.readPassword(ANSI_YELLOW+"Введіть пароль: ");
+            if(readPassword.length <= 20 && readPassword.length >= 4){
+              User user = new User(login, new String(readPassword));
+              check = user.Authorization();
+              if (check) {
+                System.out.println(ANSI_GREEN+"Ви успішно ввійшли в акаунт!!!");
+                mainMenu();
+              } else {
+                System.out.println(ANSI_RED+"Невірний логін або пароль!!!");
+                startMenu();
+              }
+            } else {
+              System.out.println(ANSI_RED+"Довжина паролю повина бути від 4 до 20 символів!!!");
+              startMenu();
+            }
           } else {
-            System.out.println(ANSI_RED+"Невірний логін або пароль!!!");
+            System.out.println(ANSI_RED+"Довжина логіну повина бути від 4 до 20 символів!!!");
             startMenu();
           }
+
           break;
 
         case "2":
@@ -63,17 +74,27 @@ public class UI {
           }
           System.out.print(ANSI_BLUE+"Введіть новий логін: ");
           login = s.nextLine();
-          readPassword = cnsl.readPassword(ANSI_YELLOW+"Введіть новий пароль: ");
-          User newUser = new User(login, new String(readPassword));
-          check = newUser.Registration();
-          if (check) {
-            System.out.println(ANSI_GREEN+"Ви успішно зареєструвалися!!!" + ANSI_RESET);
-            startMenu();
+          if (login.length() >= 4 && login.length() <= 20){
+            readPassword = cnsl.readPassword(ANSI_YELLOW+"Введіть новий пароль: ");
+            if(readPassword.length <= 20 && readPassword.length >= 4){
+              User newUser = new User(login, new String(readPassword));
+              check = newUser.Registration();
+              if (check) {
+                System.out.println(ANSI_GREEN+"Ви успішно зареєструвалися!!!" + ANSI_RESET);
+                startMenu();
+              } else {
+                System.out.println(ANSI_RED+"Такий акаунт уже існує!!!" + ANSI_RESET);
+                startMenu();
+              }
+            } else {
+              System.out.println(ANSI_RED+"Довжина паролю повина бути від 4 до 20 символів!!!");
+              startMenu();
+            }
+
           } else {
-            System.out.println(ANSI_RED+"Такий акаунт уже існує!!!" + ANSI_RESET);
+            System.out.println(ANSI_RED+"Довжина логіну повина бути від 4 до 20 символів!!!");
             startMenu();
           }
-
           break;
 
         case "3":
@@ -202,14 +223,14 @@ public class UI {
     System.out.println(ANSI_CYAN+"\nОберіть рік випуску, щоб побачити список фільмів" + ANSI_RESET);
 
     int year = 1999;
-    for (int i = 0; i <= 18; i++) {
+    for (int i = 0; i < 19; i++) {
       year++;
       System.out.println(ANSI_YELLOW + (i + 1) + ". Фільми " + year + " року");
     }
     JsonSimpleParser jsonSimpleParser = new JsonSimpleParser();
     System.out.print(ANSI_CYAN+"Оберіть номер в списку: ");
     int select = s.nextInt();
-    if (select > 0 && select < 19) {
+    if (select > 0 && select < 20) {
       year = 1999;
       year = year + select;
       Root root = jsonSimpleParser.parse(new String(Integer.toString(year)));
