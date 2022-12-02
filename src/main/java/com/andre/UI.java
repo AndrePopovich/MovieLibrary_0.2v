@@ -1,28 +1,69 @@
 package com.andre;
 
+import com.andre.create.CreateNewMovie;
 import com.andre.model.Root;
 import com.andre.model.User;
 import java.io.Console;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * Це клас інтерфейсу користувача
+ */
 public class UI {
+  /**
+   * Це зміна, в якій буде зберігатись відповідь користувача
+   */
   private String num;
+  /**
+   * Це зміна, в якій буде зберігатись логін користувача
+   */
   private String login;
+  /**
+   * Це зміна, в якій буде зберігатись пароль користувача
+   */
   private char[] readPassword;
+  /**
+   * Це зміна, яка буде показувати пройдена авторизація або реєстрація користувача
+   */
   private boolean check;
+  /**
+   * Це зміна, в якій буде зберігатись колір
+   */
   private static final String ANSI_RESET = "\u001B[0m";
+  /**
+   * Це зміна, в якій буде зберігатись колір
+   */
   private static final String ANSI_RED = "\u001B[31m";
+  /**
+   * Це зміна, в якій буде зберігатись колір
+   */
   private static final String ANSI_GREEN = "\u001B[32m";
+  /**
+   * Це зміна, в якій буде зберігатись колір
+   */
   private static final String ANSI_YELLOW = "\u001B[33m";
+  /**
+   * Це зміна, в якій буде зберігатись колір
+   */
   private static final String ANSI_BLUE = "\u001B[34m";
+  /**
+   * Це зміна, в якій буде зберігатись колір
+   */
   private static final String ANSI_PURPLE = "\u001B[35m";
+  /**
+   * Це зміна, в якій буде зберігатись колір
+   */
   private static final String ANSI_CYAN = "\u001B[36m";
+  /**
+   * Це зміна класу консоль
+   */
   private Console cnsl = System.console();
 
-
-  //private char[] securityPassword;
-
+  /**
+   * Це початкова точка входу в інтерфейс
+   * @throws IOException
+   */
   public void UserInterface() throws IOException{
     System.out.println(ANSI_PURPLE +"_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_");
     System.out.println("_-_-_-_ Вітаємо Вас в КІНОТЕЦІ!!! _-_-_-_");
@@ -30,6 +71,10 @@ public class UI {
     startMenu();
   }
 
+  /**
+   * Метод початкового меню
+   * @throws IOException
+   */
   public void startMenu() throws IOException {
     Scanner s = new Scanner(System.in);
       System.out.println(ANSI_BLUE+"\n\n_-_-_-_ ПОЧАТКОВЕ МЕНЮ _-_-_-_" +ANSI_YELLOW+ "\n1. Авторизація" + "\n2. Регістрація" +
@@ -112,14 +157,19 @@ public class UI {
       }
   }
 
+  /**
+   * Метод головного меню
+   * @throws IOException
+   */
   public void mainMenu() throws IOException {
     System.out.println(ANSI_BLUE+"\n\n_-_-_-_ ГОЛОВНЕ МЕНЮ _-_-_-_" + ANSI_YELLOW+
         "\n1. Переглянути список фільмів" +
         "\n2. ТОП-10 фільмів обраного жанру" +
         "\n3. Сортувати фільми по рейтингу" +
         "\n4. Показати список фільмів обраного жанру" +
-        "\n5. Вихід з акаунту" +
-        "\n6. Вихід з програми" + ANSI_RESET);
+        "\n5. Додати новий фільм" +
+        "\n6. Вихід з акаунту" +
+        "\n7. Вихід з програми" + ANSI_RESET);
     Scanner s = new Scanner(System.in);
     JsonSimpleParser jsonSimpleParser = new JsonSimpleParser();
     System.out.print(ANSI_CYAN+"Оберіть варіант з меню: " + ANSI_RESET);
@@ -206,10 +256,18 @@ public class UI {
         }
         mainMenu();
         break;
-      case "5":
-        startMenu();
+      case "5":/*
+        String title = s.nextLine();
+        int release = s.nextInt();
+        double respose = s.nextDouble();
+        String genre = s.nextLine();
+
+        CreateNewMovie newMovie = new CreateNewMovie();*/
         break;
       case "6":
+        startMenu();
+        break;
+      case "7":
         System.exit(0);
       default:
         System.out.println(ANSI_RED+"Неправильний вибір!!! Спробуйте ще раз..." + ANSI_RESET);
@@ -218,6 +276,9 @@ public class UI {
     }
   }
 
+  /**
+   * Метод перегляду списку
+   */
   private void viewList(){
     Scanner s = new Scanner(System.in);
     System.out.println(ANSI_CYAN+"\nОберіть рік випуску, щоб побачити список фільмів" + ANSI_RESET);

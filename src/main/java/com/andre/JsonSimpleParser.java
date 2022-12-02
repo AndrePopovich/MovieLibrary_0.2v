@@ -14,23 +14,58 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
+/**
+ * Це клас, який буде парсити наші файл
+ */
 public class JsonSimpleParser {
-
+  /**
+   * Це зміна, яка зберігає тег
+   */
   private final String TAG_MAIN_YEAR = "year";
+  /**
+   * Це зміна, яка зберігає тег
+   */
   private final String TAG_MOVIES = "movies";
+  /**
+   * Це зміна, яка зберігає тег
+   */
   private final String TAG_TITLE = "title";
+  /**
+   * Це зміна, яка зберігає тег
+   */
   private final String TAG_YEAR = "year";
+  /**
+   * Це зміна, яка зберігає тег
+   */
   private final String TAG_RESPONSE = "response";
+  /**
+   * Це зміна, яка зберігає тег
+   */
   private final String TAG_CAST = "cast";
+  /**
+   * Це зміна, яка зберігає тег
+   */
   private final String TAG_GENRE = "genres";
+  /**
+   * Це зміна, яка зберігає тег
+   */
   private final String TAG_FULL_NAME = "fullName";
+  /**
+   * Це зміна, яка зберігає директорію папки Movies
+   */
   private File directory = new File("Movies");
 
+  /**
+   * Цей метод призначений щоб парсити файл
+   * @param yearRelease приймає в себе рік фільмів
+   * @return повертає список фільмів
+   */
   public Root parse(String yearRelease){
     if(!directory.exists()){
       System.out.println("Бібліотеку створено!!! Спробуйте ще раз...");
       CreateMovies createMovies = new CreateMovies();
       createMovies.createDirectories();
+      System.exit(0);
 
     }else {
       String PATH = "Movies/"+ yearRelease +"/movies.json";
@@ -79,12 +114,20 @@ public class JsonSimpleParser {
 
     return null;
   }
+
+  /**
+   * Цей метод є універсальним, тому що він може фільтрувати та сортувати дані
+   * @param genres приймає жанр фільму
+   * @param select приймає вибір користувача
+   * @return повертає список фільмів
+   */
   public List<Movie> parseTop(String genres,String select){
     List<Movie> moviesList = new ArrayList<>();
     if(!directory.exists()){
       System.out.println("Бібліотеку створено!!! Спробуйте ще раз...");
       CreateMovies createMovies = new CreateMovies();
       createMovies.createDirectories();
+      System.exit(0);
 
     }else {
       for(int i = 2000; i<2019;i++){

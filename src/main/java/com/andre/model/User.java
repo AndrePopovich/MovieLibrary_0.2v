@@ -11,18 +11,43 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+/**
+ * Клас користувача
+ */
 public class User {
-  private String login;
-  private String password;
-  private final String PATH = "accounts.txt";
 
+  /**
+   * Зміна, яка зберігає логін
+   */
+  private String login;
+  /**
+   * Зміна, яка зберігає пароль
+   */
+  private String password;
+  /**
+   * Зміна, яка шлях до файлу з акаунтами
+   */
+  private final String PATH = "accounts.txt";
+  /**
+   * Зміна, яка зберігає файл
+   */
   private File file = new File(PATH);
 
+  /**
+   * Метод конструктор користувача
+   * @param login приймає логін
+   * @param password приймає пароль
+   */
   public User(String login, String password) {
     this.login = login;
     this.password = password;
   }
 
+  /**
+   * Метод авторизації
+   * @return повертає true або false
+   * @throws IOException
+   */
   public boolean Authorization() throws IOException {
     if(file.exists()){
       String[] array = null;
@@ -46,6 +71,11 @@ public class User {
 
   }
 
+  /**
+   * Метод реєстрації
+   * @return повертає true або false
+   * @throws IOException
+   */
   public boolean Registration() throws IOException {
     PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(PATH, true)));
     if(file.exists()){
@@ -74,6 +104,11 @@ public class User {
 
   }
 
+  /**
+   * Метод, який хешує пароль
+   * @param password приймає пароль
+   * @return повертає хешований пароль
+   */
   private String HashPassword(String password) {
     MessageDigest md5 = null;
     try {
